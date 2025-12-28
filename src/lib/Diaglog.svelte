@@ -28,16 +28,16 @@
 </script>
 
 {#if open}
-  <div class="fixed inset-0 z-50 flex items-center justify-center">
+  <div class="dialog-overlay items-center justify-center">
     <!-- backdrop -->
     <div
-      class="absolute inset-0 bg-black/40"
+      class="dialog-overlay "
       onclick={() => closeOnBackdrop && close()}
     ></div>
 
     <!-- dialog -->
     <div
-      class="relative z-10 w-full max-w-lg rounded bg-gray-800 shadow-lg"
+      class="dialog-content z-10 w-full max-w-lg rounded bg-gray-800 shadow-lg"
       role="dialog"
       aria-modal="true"
     >

@@ -23,7 +23,13 @@ export type _Node =
 
 export type _NodeAPI = {
     name: string;
-    fullSelected: string;
-    typeSelected: "class" | "id";
+    fullSelector: string;
     isItArray: boolean;
 }
+
+
+  export type TableHeader = {
+    key: string
+    label: string
+    class?: string
+  }
